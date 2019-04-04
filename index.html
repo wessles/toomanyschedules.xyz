@@ -1,0 +1,110 @@
+<!--
+Too Many Schedules
+ Copyright (C) 2019 Wes LaFerriere <wesley.laferriere@gmail.com>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+-->
+<!doctype HTML>
+<html>
+	<head>
+		<title>toomanyschedules.xyz</title>
+
+		<meta name="identifier-url" content="http://toomanyschedules.xyz/" />
+		<meta name="title" content="toomanyschedules.xyz" />
+		<meta name="description" content="the mass schedule generator for SIT" />
+		<meta name="abstract" content="the mass schedule generator for stevens" />
+		<meta name="keywords" content="SIT, stevens, technology, institute, wesley, laferriere, scheduling, sitscheduler, scheduler" />
+		<meta name="author" content="Wesley LaFerriere" />
+		<meta name="revisit-after" content="15" />
+		<meta name="language" content="EN" />
+		<meta name="copyright" content="© 2019 Wesley LaFerriere" />
+		<meta name="robots" content="All" />
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+		<link rel="manifest" href="/icon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/skeleton.css">
+		<link rel="stylesheet" href="/css/jquery-ui.css">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<script	src="/js/jquery-3.3.1.min.js"></script>
+		<script src="/js/jquery-ui.min.js"></script>
+		<script src="/js/moment.min.js"></script>
+		<script src="/js/js.cookie.js"></script>
+
+		<script type="text/javascript "src="/js/scheduler.js"></script>
+		<script type="text/javascript "src="/js/document_logger.js"></script>
+		<script type="text/javascript "src="/js/main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<br>
+					<center>
+						<img height="100px" src="/icon/favardin.png">
+						<h1>toomanyschedules.xyz</h1>
+						<p style="margin-top:-25px">the mass schedule generator for stevens</p>
+						<p style="font-size:10pt; color: #0A0A0A; margin-top: -15px;margin-bottom: 20px;"><a href="/help/">need help?</a></p>
+						<p style="font-size:8pt; color: #AAAAAA; margin-top: -10px;">v1.0.0, (c) 2019 wesley laferriere</p>
+						<hr>
+					</center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<label>classes (<a href="#" id="reset_classes" style="text-decoration: none">reset</a>):</label>
+					<textarea id="classes" cols=40 rows=20 resizeable="false"></textarea>
+					<br>
+					<label>log:</label>
+					<div id="info" class="six columns"> </div>
+				</div>
+				<div class="six columns">
+					<label>term:</label>
+					<input id="term" type="text" value="2019F">
+					<button id="search_button">search</button>
+					<label id="schedules" style="margin-bottom:10px"></label>
+					<hr>
+					<div id="filtering" class="disabled">
+						<label>acceptable times:</label>
+						<div id="times_container">
+							<center>
+								<label id="times_label" style="margin-bottom:9px"></label>
+								<div id="times"></div>
+							</center>
+						</div>
+						<hr>
+
+						<label id="possible_schedules" style="margin-top:9px">filtered schedules: n/a</label>
+						<div id="filtered_schedules">
+							<a class="schedule_link" href="#">nothing to see here...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

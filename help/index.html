@@ -1,0 +1,94 @@
+<!--
+Too Many Schedules
+ Copyright (C) 2019 Wes LaFerriere <wesley.laferriere@gmail.com>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+-->
+<!doctype HTML>
+<html>
+	<head>
+		<title>help me</title>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+		<link rel="manifest" href="/icon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<style>
+			* {
+				font-family: courier;
+			}
+			p {
+				font-size: 15pt;
+			}
+			pre {
+				font-size: 19pt;
+			}
+
+			.grayed {
+				opacity: 0.3;
+			}
+		</style>
+	</head>
+	<body style="max-width:570px; margin: 0 auto; padding-bottom: 400px;">
+		<center>
+			<img src="/icon/favardin.png">
+		</center>
+
+		<h1>toomanyschedules.xyz Help</h1>
+		<hr>
+		<h2>Adding Classes</h2>
+		<p>The class list looks weird: it has a bunch of strange symbols like ".", "$" and "^"" which certainly aren't in class section names. So what gives?</p>
+		<p>The class list uses something called regular expressions ("Regex"). Regex is a powerful tool for pattern-matching. Fortunately, you don't need to know all the intricacies of Regex to use toomanyschedules.xyz, though. Here's what you need to know:</p>
+		
+		<p><strong>Example:</strong></p>
+		<p><pre><span class="grayed">CS 135</span>.<span class="grayed">$</span></pre></p>
+		<p>The dot means "this can be any character"</p>
+		<p><pre><span class="grayed">CS 135</span>[A-PR-Z]<span class="grayed">$</span></pre></p>
+		<p>Alternatively [..] means "any character in these ranges."</p>
+		<p><pre><span class="grayed">CS 135.</span>$</pre></p>
+		<p>The dollar means "this is the end of the name"</p>
+		<br>
+
+		<p>Note: the class list is stored in your cookies whenever you type, so don't worry about losing your work. You can press "reset" to get the example back.</p>
+		<br>
+
+		<h2>Executing The Search</h2>
+		<p>The term usually looks like "2019F" and "2019S", but for summer sessions and other terms it can vary. Visit <a href="http://sitscheduler.com/">sitscheduler.com</a> for a full list (see the "term" dropdown on the right).</p>
+		<p>The log may say "reloading catalog" and hang for a bit. If this goes on for ten seconds, just reload the page. The reason for this is chrome reloading the cached version of the catalog file.</p>
+		<br>
+		
+		<h2>Filtering</h2>
+		<p>You're smart, you can figure that whole part out by yourself.</p>
+		<br>
+
+		<h2>Results</h2>
+		<p>The results show when you have found possible schedules. You can see them through sitscheduler.com by clicking on the link. In case you're curious, the numbers listed in each link are the call numbers for each section of the schedule.</p>
+		<br>
+
+		<h2>Me</h2>
+		<p>I'm Wes LaFerriere, @ Stevens Inst. of Tech, class of '22.</p>
+		<p>I can be reached at <a href="mailto:wesley.laferriere+tms@gmail.com">wesley.laferriere+tms@gmail.com</a></p>
+
+	</body>
+</html>

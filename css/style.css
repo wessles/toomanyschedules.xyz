@@ -1,0 +1,91 @@
+/*
+Too Many Schedules
+ Copyright (C) 2019 Wes LaFerriere <wesley.laferriere@gmail.com>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
+*/
+
+* {
+	font-family: courier;
+	text-transform: lowercase;
+}
+
+textarea{
+	text-transform: none;
+}
+input {
+	text-transform: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#classes {
+	background-color: #2e0e18;
+	color: #00ffea;
+
+	resize: none;
+	min-height: 300px;
+	width:100%;
+	font-family:monospace;
+}
+
+.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+#times_container {
+	padding:20px;
+	background-color:#FDFDFD;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+#filtered_schedules {
+	width:100%;
+	padding: 5px;
+
+	min-height:50px;
+	background-color:#FDFDFD;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.schedule_link {
+	margin:0;
+	font-size: 9pt;
+}
+
+#info {
+	background-color: #1e2741;
+	color: #00ff0a;
+
+	margin:0;
+	width:100%;
+	height: 200px;
+	border-radius:5px;
+	overflow-y: scroll;
+	overflow-x: wrap;
+	padding: 5px;
+}
+
+#info::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.info-line {
+	margin: 0;
+	padding: 0;
+	margin-top:3px;
+	font-family:monospace;
+}
