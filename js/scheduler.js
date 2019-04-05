@@ -91,13 +91,21 @@ class Scheduler {
                 break;
             }
         }
-        if (!match){
+        if (!match)
+            return;
+
+
+        // if it's empty...
+        let seats_left = parseInt(child['maxEnrollment']) - parseInt(child['currentEnrollment']);
+        if(seats_left == 0) {
+            print_status(section_name+': no seats left!');
             return;
         }
 
+
         // get list of meetings
         // this list will contain objects containing stuff like "MWF 8:30-9:30"
-        let meetings = child['daysTimeLocation']
+        let meetings = child['daysTimeLocation'];
 
         // here, we separate the "MWF 8:30-9:30" stuff into seperate "M 8:30-9:30", "W 8:30-9:30", etc.
         // this way we can see if anything overlaps later on
@@ -124,7 +132,7 @@ class Scheduler {
             'callnum': child['callNumber'],
             'instructor': instructor,
             'meetings': meeting_objs,
-            'seats': parseInt(child['maxEnrollment'])
+            'seats': seats_left
         });
     }
 
